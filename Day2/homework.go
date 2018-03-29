@@ -1,7 +1,6 @@
 package main
 
 import "fmt"
-
 func main() {
 	//1、每种基本类型的变量，各声明5个变量，并打印变量的数值，以及类型
 	func1();
