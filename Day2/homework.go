@@ -21,6 +21,7 @@ func main() {
 	 func10();
 }
 func func10()  {
+	fmt.Println("\n华丽分割线=======10=========")
 	a := 1976;
 	fmt.Printf("千位 :%d 百位:%d 十位:%d 个位:%d",a/1000,(a/100)%10,(a%100)/10,a%10);
 }
@@ -101,6 +102,6 @@ func func3(){
 	div := a/b;
 	mod := a%b;
 	fmt.Println("和",sum,"差",sub,"积",pro,"商",div,"取余",mod);
+	fmt.Println("^",4^12);
 }
-
 
