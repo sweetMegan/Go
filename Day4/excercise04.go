@@ -25,22 +25,22 @@ func func5() {
 	moneyM := 0
 	totalX := 0
 	moneyX := 0
-	for totalG = 1; totalG <= total; totalG++ {
+	for totalG = 1; totalG <= 20; totalG++ {
 		moneyG = 5 * totalG
-		for totalM = 1; totalM <= total-totalG; totalM++ {
+		for totalM = 1; totalM <= 33; totalM++ {
 			moneyM = 3 * totalM
 			for totalX = 1; totalX <= total-totalG-totalM; totalX++ {
 				if totalX%3 == 0 {
 					moneyX = totalX / 3
 					if moneyX+moneyM+moneyG == total && totalX+totalM+totalG == total {
 						fmt.Printf("\n嗯，知道了!公鸡：%d，母鸡：%d,小鸡仔:%d", totalG, totalM, totalX)
-						return
+						//return
 					}
 				}
 			}
 		}
 	}
-	fmt.Println("TMD 算不出来")
+	fmt.Println("\nTMD 算不出来")
 }
 func func4() {
 	for i := 2; i <= 100; i++ {
