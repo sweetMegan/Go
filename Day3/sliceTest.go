@@ -18,7 +18,7 @@ func func2(){
 	fmt.Println(slice)
 }
 func func3()  {
-	array :=[]int{1,3,6,5,4,5,6,7,3,10,33,22,5,5}
+	array := []int{1,3,6,5,4,5,6,7,3,10,33,22,5,5}
 	/**
 	*[startIndex:endIndex]
 	*array中从下标startIndex到下标endIndex-1个元素

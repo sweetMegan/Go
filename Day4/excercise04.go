@@ -39,6 +39,9 @@ func main() {
 	}
 }
 func func6()  {
+	/*
+	创建随机数
+	 */
 	rand.Seed(time.Now().Unix())
 	num1 := rand.Intn(100)+1
 	for  {
