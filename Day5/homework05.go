@@ -29,7 +29,7 @@ func main(){
 func func5()  {
 	fmt.Println("华丽分割线==============5===============")
 
-	array := [5]int{}
+	array := [7]int{}
 	for i := range array{
 		array[i] = i+1
 	}

@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 func main() {
@@ -22,25 +23,23 @@ func main() {
 	 delete(map1,"France")
 	 fmt.Println(map1)
 
-	 var s = make([]int,0)
-	 s = []int{1,2,6,7,7,33,5,3,7}
-	for value := range s {
-		fmt.Println(value)
+	 map1["Japan"] = "Tokio"
+	 fmt.Println(map1)
+	 map1["Japan"] = "小日本儿"
+	 fmt.Println(map1)
+
+	 map2 := map[int]string{1:"HR",2:"coder",4:"四",5:"五",3:"三"}
+	for i := 1; i < len(map2); i++ {
+		fmt.Println(map2[i])
 	}
-
-	//
-	//var a = []int{1,2,34,5,6,7,78,8}
-	//for value := range a {
-	//	fmt.Println(value)
-	//}
-	//s = append(s,100)
-	////copy(s,a)
-	//fmt.Println(s)
-	//
-	//s2 := make([]int,len(s))
-	// copy(s2,s)
-	//fmt.Println(s2)
+	delete(map2,1)
+	fmt.Println(map2)
 
 
+	//s := []int{}
+	//s = append(s,2,3,4)
+	//s[1] = 2
+	s := []string{"helloworld"}
+	fmt.Printf("%v",s)
 }
 

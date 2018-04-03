@@ -29,3 +29,7 @@ func func3()  {
 	fmt.Println(slice)
 	fmt.Println("slice长度:",len(slice),"slice容量:",cap(slice))
 }
+func deleteObjectAtIndex(index int,slice []int)  {
+	slice = append(slice[:index],slice[index+1:]...)
+
+}
