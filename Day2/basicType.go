@@ -7,7 +7,7 @@ import (
 )
 
 func main()  {
-	fmt.Println(12)
+	//fmt.Println(12)
 	//int
 	//var i int = 8
 	//var i2 byte = 32
@@ -33,7 +33,7 @@ func main()  {
 	//fmt.Printf("e = %t  类型是%T \n",e,e)
 	//fmt.Printf("f = %q  类型是%T \n",f,f)
 	//
-	f := 3.1405926
+	f := 3.1465926
 	fmt.Printf("%f,%.2f \n",f,f)
 	fmt.Printf("%f \n",math.Ceil(f))
 	fmt.Printf("%f \n",math.Floor(f))
@@ -44,15 +44,21 @@ func main()  {
 	s4 :=  strconv.FormatFloat(f,'g',2,32)
 	s5 :=  strconv.FormatFloat(f,'G',2,32)
 
-	fmt.Printf("s = %s \n",s);
-	fmt.Printf("s2 = %s \n",s2);
-	fmt.Printf("s3 = %s \n",s3);
-	fmt.Printf("s4 = %s \n",s4);
-	fmt.Printf("s5 = %s \n",s5);
+	fmt.Printf("s = %s \n",s)
+	fmt.Printf("s2 = %s \n",s2)
+	fmt.Printf("s3 = %s \n",s3)
+	fmt.Printf("s4 = %s \n",s4)
+	fmt.Printf("s5 = %s \n",s5)
+
+	s = "3.1500000000000000"
+	ff,_:= strconv.ParseFloat(s,64)//3.1500000953674316
+	fmt.Println(ff,"======")
+
 
 	//保留两位不四舍五入
 	f2 := math.Floor(f*100)/100
-	fmt.Printf("%.2f",f2)
+	fmt.Printf("%f\n",f2)
+	fmt.Println(f2)
 	var b = 4
 	 b %= 3
 	 b = b%3
