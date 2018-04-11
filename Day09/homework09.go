@@ -53,9 +53,12 @@ func (stu Student)printInfo(){
 	fmt.Printf("学生%s，年龄：%d,成绩:%.1f\n",stu.name,stu.age,stu.score)
 }
 func (w Worker)printInfo(){
-	fmt.Printf("工人%s,年龄:%d,工资:%.2f\n",w.name,w.age,w.salary)
+	w.Person09.printInfo()
+	fmt.Printf("工资:%.2f\n",w.salary)
 }
-
+func (p Person09)printInfo(){
+	fmt.Print(p)
+}
 
 func main()  {
 	var e1 Employee
@@ -67,6 +70,12 @@ func main()  {
 
 	user1 := User{"河流","password"}
 	fmt.Println(user1)
+
+	user2 := User{
+		username:"username",
+		password:"pw",
+		}
+		fmt.Println(user2)
 
 
 	wheels := []Wheel{}
@@ -92,4 +101,5 @@ func main()  {
 	w.age = 40
 	w.salary = 5000.99
 	w.printInfo()
+	//w.Person09.printInfo()
 }
